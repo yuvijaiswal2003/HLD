@@ -1,0 +1,12 @@
+{
+  "name": "hld-ladder-source",
+  "private": true,
+  "description": "Source for the HLD Ladder website: course content and the static site generator.",
+  "scripts": {
+    "validate": "node validate.js",
+    "diagrams": "python3 web/render-diagrams.py",
+    "build": "node web/build-site.js",
+    "test": "python3 web/test-site.py"
+  },
+  "dependencies": { "mermaid": "10.9.1" }
+}
